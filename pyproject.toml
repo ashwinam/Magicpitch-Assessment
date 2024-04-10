@@ -13,6 +13,7 @@ uvicorn = {extras = ["standard"], version = "^0.29.0"}
 requests = "^2.31.0"
 celery = "^5.3.6"
 sqlalchemy = "^2.0.29"
+pytest = "^8.1.1"
 
 
 [build-system]

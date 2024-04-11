@@ -11,5 +11,4 @@ COPY . .
 
 ENV CELERY_BROKER_URL=pyamqp://guest@localhost//
 
-CMD [ "poetry", "run", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"] & \
-    celery -A tasks worker --loglevel=INFO
+CMD [ "poetry", "run", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
